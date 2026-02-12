@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "automergeStrategy": "squash",
   "commitMessageAction": "update",
   "commitMessagePrefix": "`🧩 chore(deps):",
   "commitMessageSuffix": "`",
