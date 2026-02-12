@@ -1,0 +1,28 @@
+name: Autofix
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  fmt-fix:
+    if: startsWith(github.head_ref, 'renovate/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: collide-kit/collide-workflows/actions/prepare@2b734c48e34400f14d64a62398f44a71d0dadef4 # v1.3.0
+
+      - run: yarn fmt:fix
+
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || (git commit -m "style: auto-fix formatting" && git push)
