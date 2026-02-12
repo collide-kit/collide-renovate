@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
 
       - name: Setup Node & Yarn
-        uses: collide-kit/collide-workflows/actions/prepare@2b734c48e34400f14d64a62398f44a71d0dadef4 # v1.3.0
+        uses: collide-kit/collide-workflows/actions/prepare@10c190c45b7e24f0c2d4e70e42b3830ba09c39f3 # v1.0.0
 
       - name: Run format check
         run: yarn fmt:check
