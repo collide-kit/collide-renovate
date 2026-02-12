@@ -30,6 +30,7 @@ Add to your `renovate.json` (or `renovate.json5`, `.renovaterc`):
 | `commitMessagePrefix`                        | `` `🧩 chore(deps):` `` | Backtick-wrapped prefix for all commit messages            |
 | `dependencyDashboardAutoclose`               | `true`                  | Closes the dashboard issue when no open PRs remain         |
 | `dependencyDashboardOSVVulnerabilitySummary` | `unresolved`            | Shows only unresolved OSV vulnerabilities on the dashboard |
+| `automergeStrategy`                          | `squash`                | Squash-merges automerged PRs into a single commit          |
 
 ### Package rules
 
