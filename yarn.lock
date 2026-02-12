@@ -1223,7 +1223,7 @@ __metadata:
     prettier-plugin-multiline-arrays: "npm:^4.1.4"
     prettier-plugin-packagejson: "npm:^3.0.0"
     prettier-plugin-sort-json: "npm:^4.2.0"
-    renovate: "npm:^43.9.0"
+    renovate: "npm:^43.10.1"
   languageName: unknown
   linkType: soft
 
@@ -7256,7 +7256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renovate@npm:^43.9.0":
+"renovate@npm:^43.10.1":
   version: 43.10.1
   resolution: "renovate@npm:43.10.1"
   dependencies:
