@@ -1,5 +1,11 @@
 # ⚫ @collide-kit/collide-renovate
 
+## 1.1.0 ✨
+
+### Minor Release
+
+- ⚙️ `automergeStrategy: squash` — automerged PRs are now squash-merged into a single commit
+
 ## 1.0.0 🚀
 
 ### Major Release
