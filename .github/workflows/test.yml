@@ -1,0 +1,19 @@
+name: Test
+
+on:
+  workflow_call:
+
+jobs:
+  test:
+    name: Validate config
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Setup Node & Yarn
+        uses: collide-kit/collide-workflows/actions/prepare@2b734c48e34400f14d64a62398f44a71d0dadef4 # v1.3.0
+
+      - name: Run config validation
+        run: yarn test
