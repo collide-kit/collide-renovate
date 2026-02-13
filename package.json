@@ -31,7 +31,7 @@
     "test": "renovate-config-validator ./default.json"
   },
   "dependencies": {
-    "renovate": "^43.10.2"
+    "renovate": "^43.11.1"
   },
   "devDependencies": {
     "@prettier/plugin-oxc": "^0.1.3",
